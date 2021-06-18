@@ -1,0 +1,272 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  background: linear-gradient(0deg, #ffffff, #53e1f6);
+}
+.header__body {
+  position: relative;
+  top: 0;
+  padding: 0px 10px;
+  left: 0;
+  width: 100%;
+  height: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.inst__name {
+  flex: 9;
+  height: 100%;
+  align-items: center;
+}
+.inst__name h1 {
+  position: relative;
+  font-size: 55px;
+}
+.inst__logo {
+  flex: 2;
+  height: 100%;
+}
+.content__text {
+  position: relative;
+  padding: 0px 50px;
+  width: 100%;
+  height: 700px;
+}
+.sciens__name {
+  position: relative;
+  font-size: 80px;
+  top: 50px;
+  z-index: 10;
+}
+.sciens__info {
+  position: relative;
+  font-size: 30px;
+  top: 200px;
+}
+.book__and__phone {
+  position: absolute;
+  bottom: 35%;
+  right: 15%;
+  width: 300px;
+  height: auto;
+}
+.navigation__boxes {
+  position: relative;
+  padding: 0px 80px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.box {
+  position: relative;
+  margin-bottom: 20px;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 175px;
+  border-radius: 20px;
+  transition: 0.5s;
+  background: linear-gradient(-25deg, #00ff66, #ebff00, #ebff00);
+}
+.box:hover {
+  transform: scale(1.1);
+  border: 1px solid grey;
+  box-shadow: 5px 5px 50px grey;
+}
+.box p {
+  position: relative;
+  top: 20px;
+  text-align: center;
+  font-size: 25px;
+}
+.box button {
+  position: relative;
+  top: 30px;
+  left: 35%;
+  width: 85px;
+  height: 25px;
+  border-radius: 5px;
+  border: 1px solid #53e1f6;
+  transition: 0.5s;
+}
+.box button:hover {
+  transform: scale(1.3);
+  border: 2px solid #53e1f6;
+}
+.authors {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 90%;
+  height: 400px;
+  background: linear-gradient(0deg, #ffffff, #53e1f6);
+  margin: 0 auto;
+  border-radius: 20px;
+}
+.authors h1 {
+  position: relative;
+  text-align: center;
+  font-size: 35px;
+  top: 30px;
+}
+.authors__info {
+  position: relative;
+  top: 70px;
+  left: 0;
+  display: flex;
+  justify-content: space-around;
+}
+.abdullaev {
+  width: 40%;
+  text-align: center;
+}
+.karimova {
+  width: 40%;
+  text-align: center;
+}
+.abdullaev img {
+  position: relative;
+  top: 0;
+  width: 70px;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.abdullaev img:hover {
+  transform: scale(1.2);
+}
+.karimova img {
+  position: relative;
+  top: 0;
+  width: 70px;
+  transition: 0.5s;
+  border-radius: 15px;
+}
+.karimova img:hover {
+  transform: scale(1.2);
+}
+.abdullaev p {
+  position: relative;
+  text-align: center;
+}
+.karimova p {
+  position: relative;
+  text-align: center;
+}
+
+@media (max-width: 1100px) {
+  .inst__name h1 {
+    font-size: 45px;
+  }
+  .inst__logo {
+    position: relative;
+
+    transform: scale(0.8);
+  }
+  .header__body {
+    height: 180px;
+  }
+}
+@media (max-width: 900px) {
+  .inst__name h1 {
+    font-size: 35px;
+  }
+  .inst__logo {
+    position: relative;
+
+    transform: scale(0.8);
+  }
+  .header__body {
+    height: 160px;
+  }
+  .sciens__name {
+    font-size: 70px;
+  }
+}
+@media (max-width: 650px) {
+  .inst__name h1 {
+    font-size: 28px;
+  }
+  .inst__logo {
+    position: relative;
+
+    transform: scale(0.7);
+  }
+  .header__body {
+    height: 155px;
+  }
+  .sciens__name {
+    font-size: 60px;
+  }
+}
+@media (max-width: 450px) {
+  .inst__name h1 {
+    font-size: 17px;
+  }
+  .inst__name {
+    flex: 7;
+  }
+  .inst__logo {
+    flex: 1;
+  }
+  .inst__logo {
+    position: relative;
+    transform: scale(0.7);
+  }
+  .header__body {
+    height: 80px;
+  }
+  .sciens__name {
+    position: relative;
+    top: 20px;
+    font-size: 40px;
+  }
+  .book__and__phone {
+    position: absolute;
+    bottom: 48%;
+    right: 15%;
+    width: 200px;
+    height: auto;
+  }
+  .sciens__info {
+    position: relative;
+    font-size: 20px;
+    top: 200px;
+  }
+  .authors__info {
+    position: relative;
+    top: 70px;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .abdullaev {
+    width: 40%;
+    text-align: center;
+  }
+  .karimova {
+    width: 40%;
+    text-align: center;
+  }
+  .content__text {
+    position: relative;
+    padding: 0px 50px;
+    width: 100%;
+    height: 600px;
+  }
+}
+@media (max-width: 350px) {
+  .authors__info p {
+    position: relative;
+    font-size: 12px;
+  }
+}
